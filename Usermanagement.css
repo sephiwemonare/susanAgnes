@@ -1,0 +1,146 @@
+/* General container styling */
+.user-management {
+    width: 60%;
+    margin: 50px auto;
+    background-color: #999c9f;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    color: #fdefef;
+  }
+  
+  /* Header styling */
+  .user-management h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: rgb(40, 38, 38);
+    margin-bottom: 20px;
+    border-bottom: 2px solid rgb(129, 129, 130);
+    padding-bottom: 10px;
+  }
+  
+  /* Form styling */
+  .user-management form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+  
+  .user-management form input {
+    font-size: 1.1rem;
+    padding: 12px 20px;
+    border: 2px solid #afb3b6;
+    border-radius: 8px;
+    transition: border-color 0.3s;
+  }
+  
+  .user-management form input:focus {
+    outline: none;
+    border-color: #313233;
+  }
+  
+  .user-management form button {
+    background-color: #5e5f61;
+    color: white;
+    font-size: 1.2rem;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .user-management form button:hover {
+    background-color: #a2a6aa;
+  }
+  
+  /* User list styling */
+  .user-management h3 {
+    font-size: 1.8rem;
+    color: rgb(47, 47, 46);
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .user-management ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .user-management ul li {
+    background-color: #bdbdb5;
+    padding: 15px;
+    color: #313233;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+  }
+  
+  .user-management ul li:hover {
+    background-color: #dee2e6;
+  }
+  
+  .user-management ul li button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #605a43;
+    font-size: 1rem;
+    margin-left: 10px;
+    transition: color 0.3s;
+  }
+  
+  .user-management ul li button:hover {
+    color: #0056b3;
+  }
+  
+  /* Edit and delete buttons */
+  .user-management ul li button.edit-button {
+    color: #28a745;
+  }
+  
+  .user-management ul li button.edit-button:hover {
+    color: #cba910;
+  }
+  
+  .user-management ul li button.delete-button {
+    color: #99fc3c;
+  }
+  
+  .user-management ul li button.delete-button:hover {
+    color: #bc6c10;
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .user-management {
+      width: 90%;
+    }
+  
+    .user-management h2 {
+      font-size: 1.8rem;
+    }
+  
+    .user-management form input, 
+    .user-management form button {
+      font-size: 1rem;
+    }
+  
+    .user-management ul li {
+      font-size: 1rem;
+    }
+  }
+  
+  .success-message {
+    color: green; /* Green text for success */
+    font-size: 26px; /* Font size */
+    margin-bottom: 25px; /* Spacing below the message */
+    text-align: center; /* Center the message */
+  }
+  

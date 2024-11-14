@@ -1,0 +1,177 @@
+/* General page styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif; /* Use a clean, professional font */
+    background: linear-gradient(135deg, #FFA500 0%, #FFA500 100%); /* Soft gradient background */
+    color: #333; /* Dark text for readability */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh; /* Full height */
+    padding-top: 40px; /* Space at the top */
+  }
+  
+  /* Container for the product list */
+  .product-list {
+    background-color: rgba(255, 255, 255, 0.95); /* Glassmorphism effect */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Elevated shadow for depth */
+    max-width: 1000px; /* Max width for table */
+    width: 100%;
+    backdrop-filter: blur(10px); /* Blurred background */
+  }
+  
+  /* Title styles */
+  .product-list h2, .product-list h3 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #1d1d1e;
+  }
+  
+  /* Search input */
+  .product-list input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 2px solid rgb(143, 158, 152);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+  }
+  
+  .product-list input[type="text"]:focus {
+    border-color: #5a3fbc;
+    outline: none;
+  }
+  
+  /* Form styling for editing products */
+  .product-list form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+  
+  .product-list form input {
+    flex: 1 1 30%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 2px solid #ddd;
+    transition: border-color 0.3s ease;
+  }
+  
+  .product-list form input:focus {
+    border-color: #cfb9d8;
+  }
+  
+  /* Submit button styling */
+  .product-list form button {
+    padding: 10px 20px;
+    background-color: #cfb9d8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .product-list form button:hover {
+    background-color: #cfb9d8;
+  }
+  
+  /* Table styling */
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+  }
+  
+  .table th,
+  .table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 2px solid #eee;
+  }
+  
+  .table th {
+    background-color: #f1f1f1;
+    color: #3c1a9a;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .table td {
+    color: #555;
+  }
+  
+  .table tr:hover {
+    background-color: rgba(90, 63, 188, 0.1); /* Highlight on hover */
+  }
+  
+  /* Action buttons */
+  .table button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 5px;
+  }
+  
+  .table button:hover {
+    background-color: #d3c5f3; /* Lighter color on hover */
+  }
+  
+  .table button:nth-child(1) {
+    background-color: #cfb9d8;
+    color: white;
+  }
+  
+  .table button:nth-child(2) {
+    background-color: #cfb9d8;
+    color: white;
+  }
+  
+  .table button:nth-child(3) {
+    background-color: #cfb9d8;
+    color: white;
+  }
+  
+  .table button:nth-child(4) {
+    background-color: #3c1a9a;
+    color: white;
+  }
+  
+  /* Transaction history */
+  .product-list ul {
+    list-style: none;
+    padding-left: 0;
+    color: #cfb9d8;
+  }
+  
+  .product-list ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+  }
+  
+  .product-list ul li:last-child {
+    border-bottom: none;
+  }
+  
+.success-message {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #d4edda; /* Light green background */
+  color: rgb(187, 152, 109); /* Dark green text */
+  border: 1px solid #c3e6cb; /* Green border */
+  border-radius: 4px; /* Optional: Slightly round the corners */
+}

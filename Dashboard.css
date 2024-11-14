@@ -1,0 +1,116 @@
+.dashboard {
+    background-color: #c1b2a9; /* Light background for the dashboard */
+    padding: 20px; /* Padding for spacing */
+    border-radius: 10px; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Card shadow for depth */
+    max-width: 800px; /* Limit the width of the dashboard */
+    margin: 40px auto; /* Center the dashboard on the page */
+    font-family: 'Helvetica', sans-serif; /* Clean font for readability */
+  }
+  
+  .dashboard h2 {
+    text-align: center; 
+    color: rgb(26, 24, 25); 
+    font-size: 24px; /* Larger heading font */
+    margin-bottom: 20px; /* Spacing below heading */
+    border-bottom: 2px solid #dec689; 
+    padding-bottom: 10px;
+  }
+  
+  .table {
+    width: 100%; /* Full width table */
+    border-collapse: collapse; /* No gaps between table cells */
+    margin-top: 20px; /* Space between heading and table */
+  }
+  
+  .table thead {
+    background-color: #3d3e3f; 
+    color: rgb(133, 126, 126); 
+  }
+  
+  .table th, .table td {
+    padding: 12px 20px; /* Padding inside cells */
+    border: 1px solid #4c4b4b; 
+    text-align: center; 
+    font-size: 16px; 
+  }
+  
+  .table tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* Alternate row background */
+  }
+  
+  .table tbody tr:hover {
+    background-color: #e6f7ff; /* Highlight row on hover */
+  }
+  
+  .table th {
+    font-weight: bold; /* Bold header text */
+  }
+  
+  .table td {
+    color: #555; /* Slightly darker text for table body */
+  }
+  
+  .no-products {
+    text-align: center; 
+    color: #999; 
+    font-size: 18px; 
+    margin-top: 20px; 
+  }
+  
+
+  .rotating-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+  }
+  
+  .rotating-image {
+    width: 200px;
+    height: auto;
+    animation: rotate 10s linear infinite;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .image-carousel {
+    position: relative;
+    overflow: hidden;
+}
+
+.animated-image {
+    position: absolute;
+    width: 20%;
+    height: 10;
+    opacity: 0;
+    align-content: center;
+    animation: rotateImage 20s infinite;
+}
+
+@keyframes rotateImage {
+    0%, 100% {
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+    25% {
+        opacity: 10;
+        transform: rotate(90deg);
+    }
+    50% {
+        opacity: 10;
+        transform: rotate(180deg);
+    }
+    75% {
+        opacity: 1;
+        transform: rotate(270deg);
+    }
+}
+
